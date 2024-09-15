@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="libs/lodash.js"></script>
+		<script type="text/javascript" src="libs/cannon.js"></script>
+		<script type="text/javascript" src="libs/raphael.min.js"></script>
+		<script type="text/javascript" src="libs/paper.min.js"></script>
+		<script type="text/javascript" src="libs/dat.gui.min.js"></script>
+	</head>
+	<body>
+		<canvas id="paper-canvas" style="position:absolute;z-index:-1;"></canvas>
+		<div id="loading-screen">
+				<div id="loading-screen-background"></div>
+				<div id="loading-text"></div><br><br><br>
+				<button class="mode" id="manu">Manual</button><br><br><br>
+				<button class="mode" id="auto">Autonomous</button>
+				<button class="mode" id="back" style="margin-bottom:48px;">Back</button>
+				<ul class="flex-container" id="flex">
+					<li class="flex-item">
+						<h1>sharp-turns</h1>
+					</li>
+					<li class="flex-item">
+						<h1>static-obstacles</h1>
+					</li>
+				</ul>
+		</div>
+		<div id="camera" style="position:absolute;left:80px;top:570px;height:350px;width:500px;border:solid;visibility:hidden;"></div>
+		<p id="speed" style="position:absolute;left:1440px;top:184px;visibility:hidden;"></p>
+		<p id="visibleObjects" style="position:absolute;left:1440px;top:214px;visibility:hidden;"></p>
+	</body>
+	<script type="module" src="init.js"></script>
+</html>
