@@ -3,6 +3,9 @@ autonomous and manual car physics demo with three.js
 
 A simple playground built on Three JS and Cannon JS for experimenting with car physics and autonomous driving. There are two modes, manual and autonomous. Autonomous mode uses one of the most basic algorithms for autonomous navigation called “Pure Pursuit”. Autonomous mode still has lots of room for improvement.
 
+![Screenshot (821)](https://github.com/user-attachments/assets/d1b0c2a4-a278-4e89-b88f-812b0b26cf28)
+
+
 How Pure Pursuit works:
 
 On each frame, the current forward vector line of the vehicle is calculated along with a “look ahead” point on that line. A second vector line is then calculated which lies perpendicular to the forward vector. The point where this perpendicular vector line intersects with the “road” curve is then calculated and a triangle is formed using point A (vehicle), point B (look ahead), and point C (intersection). The required steering value is then calculated by finding the angle theta of this triangle.
