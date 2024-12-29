@@ -46,7 +46,7 @@ class Application
 		{
 		    let _this = this;
 				let el = document.getElementById('loading-text');
-		    this.loader.load('./models/aston_martin_db4gt.gltf', function (gltf) {
+		    this.loader.load('./models/vehicle.gltf', function (gltf) {
 					let materials = [];
 					let wheels = [];
 					let mat = new CANNON.Material('Mat');
