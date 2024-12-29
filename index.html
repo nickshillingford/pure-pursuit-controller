@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="libs/lodash.js"></script>
+		<script type="text/javascript" src="libs/cannon.js"></script>
+		<script type="text/javascript" src="libs/paper.min.js"></script>
+		<script type="text/javascript" src="libs/dat.gui.min.js"></script>
+	</head>
+	<body>
+		<canvas id="paper-canvas" style="position:absolute;z-index:-1;"></canvas>
+		<div id="loading-screen">
+				<div id="loading-screen-background"></div>
+				<div id="loading-text"></div><br><br><br>
+				<ul class="flex-container" id="flex">
+					<li class="flex-item">
+						<h1>turns</h1>
+					</li>
+					<li class="flex-item">
+						<h1>lane-change</h1>
+					</li>
+				</ul>
+		</div>
+	</body>
+	<script type="module" src="init.js"></script>
+</html>
